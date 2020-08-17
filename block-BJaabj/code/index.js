@@ -6,7 +6,7 @@ function sayHello() {
   alert(`Hello World!`);
 }
 
-sayHello();
+// sayHello();
 
 /*
 2. Create a function named `fullName` with the following steps:
@@ -25,7 +25,7 @@ function fullName() {
   alert(fullName);
 }
 
-fullName();
+// fullName();
 
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -44,7 +44,7 @@ function addTwoNumbers() {
   alert(sum);
 }
 
-addTwoNumbers();
+// addTwoNumbers();
 
 /*
 4. Create a function named `getTable` with the following steps:
@@ -72,7 +72,7 @@ function getTable() {
   }
 }
 
-getTable();
+// getTable();
 
 /*
 5. Create a function named `isLeapYear` with the following steps:
@@ -87,7 +87,7 @@ function isLeapYear() {
   : alert(`${year} is a leap year`);
 }
 
-isLeapYear();
+// isLeapYear();
 
 /*
 6. Create a function named `getFactorial` with the following steps:
@@ -106,4 +106,4 @@ function getFactorial() {
   alert(`The factorial of ${number} is ${factorial}`);
 }
 
-getFactorial();
+// getFactorial();
