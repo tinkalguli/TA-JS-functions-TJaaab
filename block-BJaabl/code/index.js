@@ -30,7 +30,7 @@ addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 
 function addTwoNumbers(firstNum, secondNum) {
-  if (isNaN(firstNum) || isNaN(secondNum)) {
+  if (typeof numA !== "number" || typeof numB !== "number") {
     alert(`Enter Valid Input`);
   } else {
     return firstNum + secondNum;
@@ -50,7 +50,7 @@ calc(20, 10, 'mul'); // 200
 */
 
 function calc(numA, numB, operation) {
- if(isNaN(numA) || isNaN(numB)) {
+ if(typeof numA !== "number" || typeof numB !== "number") {
     alert(`Enter Valid Input`);
  } else {
    switch(operation) {
