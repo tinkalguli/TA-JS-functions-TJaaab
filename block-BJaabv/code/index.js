@@ -120,9 +120,9 @@ function sumOfN(n = 0) {
   let sum = 0;
 
   for (let i = 5; i <= n; i += 5) {
-    for (let j = 7; j <= n; j += 7) {
-      sum = sum + i + j;
-   }
+    if (i % 5 === 0 || i % 7m === 0 ) {
+      sum += i;
+    }
  }
 
  return sum;
