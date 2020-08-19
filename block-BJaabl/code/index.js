@@ -30,7 +30,7 @@ addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
 
 function addTwoNumbers(firstNum, secondNum) {
-  if (typeof numA !== "number" || typeof numB !== "number") {
+  if (typeof firstNum !== "number" || typeof secondNum !== "number") {
     alert(`Enter Valid Input`);
   } else {
     return firstNum + secondNum;
@@ -62,6 +62,9 @@ function calc(numA, numB, operation) {
        break;
      case "mul":
        return numA * numB;
+       break;
+    case "div":
+       return numA / numB;
    }
  }
 }
