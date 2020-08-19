@@ -75,8 +75,10 @@ isLeapYear(2001); // false
 */
 
 function isLeapYear(year) {
-  return year % 4 ? false : true;
-}
+  if(year % 400 === 0) return true;
+  if(year % 100 === 0) return false;
+  return year % 4 === 0;
+}    
 
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
