@@ -119,8 +119,8 @@ sumOfN(); // 0
 function sumOfN(n = 0) {
   let sum = 0;
 
-  for (let i = 5; i <= n; i += 5) {
-    if (i % 5 === 0 || i % 7m === 0 ) {
+  for (let i = 1; i <= n; i ++) {
+    if (i % 5 === 0 || i % 7 === 0 ) {
       sum += i;
     }
  }
