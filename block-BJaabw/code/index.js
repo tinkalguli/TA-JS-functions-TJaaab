@@ -104,9 +104,13 @@ Twist is when user passes anything other than number, or string value you should
 */
 
 function sum(x, y) {
-  return (typeof(x) === "string" && typeof(y) === "string"
-  || typeof(x) === "number" && typeof(y) === "number")
-  ? x + y : "Enter valid Values";
+  if(typeof(x) === "number" && typeof(y) === "number") {
+    return x + y;
+  } else if(typeof(x) === "string" && typeof(y) === "string") {
+    return `${x} ${y}`;
+  } else {
+    return "Enter valid Values";
+  }
 }
 
 // Function Test
