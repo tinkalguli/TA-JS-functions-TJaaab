@@ -37,8 +37,8 @@ function fullName() {
 */
 
 function addTwoNumbers() {
-  let firstNum = prompt(`Enter the first number`, "");
-  let secondNum = prompt(`Enter the second number`, "");
+  let firstNum = +prompt(`Enter the first number`, "");
+  let secondNum = +prompt(`Enter the second number`, "");
   let sum = firstNum + secondNum;
 
   alert(sum);
@@ -66,7 +66,7 @@ function addTwoNumbers() {
 */
 
 function getTable() {
-  let num = prompt(`Enter a number`, "");
+  let num = +prompt(`Enter a number`, "");
   for(let i = 1; i <= 10; i++) {
     console.log(`${num} * ${i} = ${num * i}`);
   }
@@ -83,8 +83,10 @@ function getTable() {
 
 function isLeapYear() {
   let year = prompt(`Enter a year`, "");
-  year % 4 ? alert(`${year} is not a leap year`)
-  : alert(`${year} is a leap year`);
+  if (year % 400 === 0) alert(`${year} is a leap year`);
+  if (year % 100 === 0) alert(`${year} is not a leap year`);
+  if (year % 4 === 0) alert(`${year} is a leap year`);
+  else alert(`${year} is not a leap year`);
 }
 
 // isLeapYear();
